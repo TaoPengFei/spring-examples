@@ -1,7 +1,7 @@
-package cn.lee.jason.config;
+package cn.lee.jason.simple.config;
 
-import cn.lee.jason.hello.HelloWorld;
-import cn.lee.jason.hello.impl.HelloWorldImpl;
+import cn.lee.jason.simple.hello.HelloWorld;
+import cn.lee.jason.simple.hello.impl.HelloWorldImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

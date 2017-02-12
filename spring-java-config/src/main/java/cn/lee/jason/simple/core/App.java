@@ -1,7 +1,7 @@
-package cn.lee.jason.core;
+package cn.lee.jason.simple.core;
 
-import cn.lee.jason.config.AppConfig;
-import cn.lee.jason.hello.HelloWorld;
+import cn.lee.jason.simple.config.AppConfig;
+import cn.lee.jason.simple.hello.HelloWorld;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

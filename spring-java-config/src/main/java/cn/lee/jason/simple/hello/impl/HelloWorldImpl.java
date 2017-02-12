@@ -1,6 +1,6 @@
-package cn.lee.jason.hello.impl;
+package cn.lee.jason.simple.hello.impl;
 
-import cn.lee.jason.hello.HelloWorld;
+import cn.lee.jason.simple.hello.HelloWorld;
 
 /**
  * Created by jason on 17/2/9.
