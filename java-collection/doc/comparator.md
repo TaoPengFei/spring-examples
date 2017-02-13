@@ -1,0 +1,2 @@
+# java 排序Comparable和Comparator使用
+java提供了两个排序用的接口Comparable和Comparator
