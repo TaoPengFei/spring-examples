@@ -13,5 +13,8 @@ public class App {
 
         OutputHelper output = (OutputHelper) context.getBean("OutputHelper");
         output.generateOutput();
+
+        OutputHelper output2 = (OutputHelper) context.getBean("OutputHelper2");
+        output2.generateOutput();
     }
 }

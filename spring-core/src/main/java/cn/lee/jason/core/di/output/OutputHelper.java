@@ -11,6 +11,9 @@ public class OutputHelper {
         outputGenerator.generateOutput();
     }
 
+    public OutputHelper() {
+    }
+
     public OutputHelper(IOutputGenerator outputGenerator) {
         this.outputGenerator = outputGenerator;
     }
