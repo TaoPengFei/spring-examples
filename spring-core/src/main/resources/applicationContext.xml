@@ -9,4 +9,12 @@
 
     <bean id="CsvOutputGenerator" class="cn.lee.jason.core.di.output.impl.CsvOutputGenerator"/>
 
+
+    <bean id="OutputHelper2" class="cn.lee.jason.core.di.output.OutputHelper">
+        <constructor-arg>
+            <ref bean="JsonOutputGenerator"/>
+        </constructor-arg>
+    </bean>
+
+    <bean id="JsonOutputGenerator" class="cn.lee.jason.core.di.output.impl.JsonOutputGenerator"/>
 </beans>
