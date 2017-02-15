@@ -9,6 +9,8 @@ public class MainThread {
         LiftOff lift = new LiftOff();
         lift.run();
 
-
+        Thread thread = new Thread(new LiftOff());
+        thread.start();
+        System.out.println("Waiting for LiftOff");
     }
 }
