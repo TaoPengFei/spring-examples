@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent;
+package cn.lee.jason.util;
 
 /**
  * Created by jason on 17/2/18.
