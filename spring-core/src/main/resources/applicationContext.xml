@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="OutputHelper" class="cn.lee.jason.core.di.output.OutputHelper">
+        <property name="outputGenerator" ref="CsvOutputGenerator"/>
+    </bean>
+
+    <bean id="CsvOutputGenerator" class="cn.lee.jason.core.di.output.impl.CsvOutputGenerator"/>
+
+
+    <bean id="OutputHelper2" class="cn.lee.jason.core.di.output.OutputHelper">
+        <constructor-arg>
+            <ref bean="JsonOutputGenerator"/>
+        </constructor-arg>
+    </bean>
+
+    <bean id="JsonOutputGenerator" class="cn.lee.jason.core.di.output.impl.JsonOutputGenerator"/>
+</beans>
