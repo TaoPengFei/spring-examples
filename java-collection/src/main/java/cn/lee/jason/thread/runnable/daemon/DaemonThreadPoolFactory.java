@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.daemon;
+package cn.lee.jason.thread.runnable.daemon;
 
 import java.util.concurrent.*;
 

@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.sleep;
+package cn.lee.jason.thread.runnable.sleep;
 
 import cn.lee.jason.thread.runnable.basic.LiftOff;
 

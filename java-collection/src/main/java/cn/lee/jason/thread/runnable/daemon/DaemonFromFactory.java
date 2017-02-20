@@ -1,7 +1,7 @@
-package cn.lee.jason.thread.concurrent.daemon;
+package cn.lee.jason.thread.runnable.daemon;
 
-import cn.lee.jason.thread.concurrent.priority.SimplePriorities;
-
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import static cn.lee.jason.util.Utils.*;
@@ -9,31 +9,24 @@ import static cn.lee.jason.util.Utils.*;
 /**
  * Created by jason on 17/2/18.
  */
-public class SimpleDaemons implements Runnable {
-
+public class DaemonFromFactory implements Runnable {
     public void run() {
         try {
             while (true) {
                 TimeUnit.MILLISECONDS.sleep(100);
-                print(Thread.currentThread() + "   " + this);
+                print(Thread.currentThread() + "  " + this);
             }
         } catch (InterruptedException e) {
-            print("sleep interrupted");
             e.printStackTrace();
         }
     }
 
-
-
     public static void main(String[] args) throws InterruptedException {
+        ExecutorService exec = Executors.newCachedThreadPool(new DaemonThreadFactory());
         for (int i = 0; i < 10; i++) {
-            Thread daemon = new Thread(new SimpleDaemons());
-            daemon.setDaemon(true);
-            daemon.start();
+            exec.execute(new DaemonFromFactory());
         }
-        print(" All daemon started");
-        TimeUnit.MILLISECONDS.sleep(175);
-
+        print("All daemon started");
+        TimeUnit.MILLISECONDS.sleep(500);
     }
-
 }

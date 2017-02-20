@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.priority;
+package cn.lee.jason.thread.runnable.priority;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

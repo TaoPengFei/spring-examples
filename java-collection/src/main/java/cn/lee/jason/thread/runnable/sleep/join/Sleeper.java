@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.sleep.join;
+package cn.lee.jason.thread.runnable.sleep.join;
 
 import static cn.lee.jason.util.Utils.print;
 

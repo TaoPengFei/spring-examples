@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.callable;
+package cn.lee.jason.thread.runnable.callable;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;

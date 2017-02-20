@@ -1,9 +1,7 @@
-package cn.lee.jason.thread.concurrent.executor;
+package cn.lee.jason.thread.runnable.executor;
 
-import cn.lee.jason.thread.runnable.basic.LiftOff;
 import cn.lee.jason.thread.runnable.basic.exam01.Exam;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
