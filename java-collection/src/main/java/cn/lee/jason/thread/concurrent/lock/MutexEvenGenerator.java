@@ -18,8 +18,12 @@ public class MutexEvenGenerator extends IntGenerator {
             Thread.yield();
             ++currentEvenValue;
             return currentEvenValue;
-        }finally {
+        } finally {
             lock.unlock();
         }
+    }
+
+    public static void main(String[] args) {
+        EventChecker.test(new MutexEvenGenerator());
     }
 }
