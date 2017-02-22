@@ -1,7 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
 
-    <bean ></bean>
+    <!-- -->
+    <bean id="valueProvider" class="cn.lee.jason.modules.utils.el.ValueProvider">
+        <property name="parser" ref="expressionParser"></property>
+    </bean>
+    <!-- spring el 表达式解析器 -->
+    <bean id="expressionParser"
+          class="org.springframework.expression.spel.standard.SpelExpressionParser">
+        <constructor-arg ref="spelParserConfiguration"/>
+    </bean>
+
+    <bean id="spelParserConfiguration"
+          class="org.springframework.expression.spel.SpelParserConfiguration">
+        <constructor-arg name="autoGrowNullReferences">
+            <value type="boolean">true</value>
+        </constructor-arg>
+        <constructor-arg name="autoGrowCollections">
+            <value type="boolean">true</value>
+        </constructor-arg>
+    </bean>
 </beans>
