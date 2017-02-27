@@ -23,6 +23,24 @@ public class FillNumber {
                 }
             }
         }
+        cal(2);
 
+    }
+
+    public static int cal(int len) {
+        int result = 1;
+        for (int i = len; i > 0; i++) {
+            result = i * pow10(i) + cal(i-1);
+            System.out.println(result);
+        }
+        return result;
+    }
+
+    private static int pow10(int len) {
+        int result = 1;
+        for (int i = 0; i < len; i++) {
+            result = result * 10;
+        }
+        return result;
     }
 }
