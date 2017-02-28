@@ -23,19 +23,32 @@ public class FillNumber {
                 }
             }
         }
-        cal(2);
+        for (int i = 0; i < 100; i++) {
+            System.out.println(" length = " + i);
+            cal(i);
+
+        }
 
     }
 
     public static int cal(int len) {
-        int multi = 1;
-        int tmp = 1;
-        int[] arr = new int[len];
-        for (int i = 0; i < len; i++) {
-            int t = i ==0 
-            for(int t=0;i<t)
+        int max = pow10(len);
+        for (int i = 79360; i < 79370; i++) {
+            int last = i % 10;
+            int first = i / pow10(len - 1);
+            if (last > 0) {
+                int r1 = 0;
+                int r2 = i * first;
+                for (int j = 0; j <= len; j++) {
+                    r1 += last * pow10(j);
+                }
+                if (r1 == r2) {
+                    System.out.println(i + "----" + last + "----" + r1);
+
+                }
+            }
         }
-        return multi;
+        return max;
     }
 
     private static int pow10(int len) {
