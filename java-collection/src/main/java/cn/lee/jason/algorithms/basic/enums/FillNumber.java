@@ -28,12 +28,14 @@ public class FillNumber {
     }
 
     public static int cal(int len) {
-        int result = 1;
-        for (int i = len; i > 0; i++) {
-            result = i * pow10(i) + cal(i-1);
-            System.out.println(result);
+        int multi = 1;
+        int tmp = 1;
+        int[] arr = new int[len];
+        for (int i = 0; i < len; i++) {
+            int t = i ==0 
+            for(int t=0;i<t)
         }
-        return result;
+        return multi;
     }
 
     private static int pow10(int len) {
