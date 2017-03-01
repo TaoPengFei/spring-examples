@@ -5,7 +5,7 @@ package cn.lee.jason.util;
  */
 public class Utils {
 
-    public static void print(String str) {
+    public static void println(String str) {
         System.out.println(str);
     }
 }

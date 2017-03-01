@@ -13,7 +13,7 @@ public class Daemons {
         Thread d = new Thread(new Daemon());
         d.setDaemon(true);
         d.start();
-        print("d.isDaemon() =  " + d.isDaemon() + ".");
+        println("d.isDaemon() =  " + d.isDaemon() + ".");
         TimeUnit.MILLISECONDS.sleep(1);
     }
 
@@ -27,10 +27,10 @@ class Daemon implements Runnable {
         for (int i = 0; i < t.length; i++) {
             t[i] = new Thread(new DaemonSpawn());
             t[i].start();
-            print("DaemonSpawn " + i + " started ");
+            println("DaemonSpawn " + i + " started ");
         }
         for (int i = 0; i < t.length; i++) {
-            print("t[" + i + "].isDaemon() =  " + t[i].isDaemon() + ".");
+            println("t[" + i + "].isDaemon() =  " + t[i].isDaemon() + ".");
         }
         while (true) {
             Thread.yield();

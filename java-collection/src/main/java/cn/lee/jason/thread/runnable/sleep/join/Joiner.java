@@ -1,6 +1,6 @@
 package cn.lee.jason.thread.runnable.sleep.join;
 
-import static cn.lee.jason.util.Utils.print;
+import static cn.lee.jason.util.Utils.println;
 
 /**
  * Created by jason on 17-2-20.
@@ -21,9 +21,9 @@ public class Joiner extends Thread{
             sleeper.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
-            print(getName()+ " Interrupted ");
+            println(getName()+ " Interrupted ");
         }
-        print(getName() + " joined complete ");
+        println(getName() + " joined complete ");
     }
 
 }

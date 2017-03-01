@@ -14,7 +14,7 @@ public class DaemonFromFactory implements Runnable {
         try {
             while (true) {
                 TimeUnit.MILLISECONDS.sleep(100);
-                print(Thread.currentThread() + "  " + this);
+                println(Thread.currentThread() + "  " + this);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -26,7 +26,7 @@ public class DaemonFromFactory implements Runnable {
         for (int i = 0; i < 10; i++) {
             exec.execute(new DaemonFromFactory());
         }
-        print("All daemon started");
+        println("All daemon started");
         TimeUnit.MILLISECONDS.sleep(500);
     }
 }

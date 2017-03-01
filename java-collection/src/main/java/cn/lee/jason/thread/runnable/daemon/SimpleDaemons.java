@@ -13,10 +13,10 @@ public class SimpleDaemons implements Runnable {
         try {
             while (true) {
                 TimeUnit.MILLISECONDS.sleep(100);
-                print(Thread.currentThread() + "   " + this);
+                println(Thread.currentThread() + "   " + this);
             }
         } catch (InterruptedException e) {
-            print("sleep interrupted");
+            println("sleep interrupted");
             e.printStackTrace();
         }
     }
@@ -29,7 +29,7 @@ public class SimpleDaemons implements Runnable {
             daemon.setDaemon(true);
             daemon.start();
         }
-        print(" All daemon started");
+        println(" All daemon started");
         TimeUnit.MILLISECONDS.sleep(175);
 
     }
