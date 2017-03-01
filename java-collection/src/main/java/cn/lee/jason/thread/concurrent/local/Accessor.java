@@ -15,7 +15,7 @@ public class Accessor implements Runnable {
     public void run() {
         while (!Thread.currentThread().isInterrupted()) {
             ThreadLocalVariableHolder.increment();
-            print(this.toString());
+            println(this.toString());
             Thread.yield();
         }
     }

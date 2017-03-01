@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static cn.lee.jason.util.Utils.print;
+import static cn.lee.jason.util.Utils.println;
 
 /**
  * Created by jason on 17-2-24.
@@ -32,7 +32,7 @@ public class AtomicIntegerTest implements Runnable {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                print(" Aborting ");
+                println(" Aborting ");
                 System.exit(0);
             }
         }, 5000);
@@ -42,7 +42,7 @@ public class AtomicIntegerTest implements Runnable {
         while (true) {
             int val = ait.getValue();
             if (val % 2 != 0) {
-                print(val + "");
+                println(val + "");
                 System.exit(0);
             }
         }

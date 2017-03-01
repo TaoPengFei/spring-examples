@@ -3,7 +3,7 @@ package cn.lee.jason.thread.concurrent.lock;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static cn.lee.jason.util.Utils.print;
+import static cn.lee.jason.util.Utils.println;
 
 /**
  * Created by jason on 17/2/23.
@@ -15,7 +15,7 @@ public class AttemptLocking {
     public void untimed() {
         boolean captured = lock.tryLock();
         try {
-            print(" tryLock " + captured);
+            println(" tryLock " + captured);
         } finally {
             if (captured) {
                 lock.unlock();
@@ -32,7 +32,7 @@ public class AttemptLocking {
             e.printStackTrace();
         }
         try {
-            print(" tryLock(2,TimeUnit.SECONDS) : " + captured);
+            println(" tryLock(2,TimeUnit.SECONDS) : " + captured);
         } finally {
             if (captured) {
                 lock.unlock();
