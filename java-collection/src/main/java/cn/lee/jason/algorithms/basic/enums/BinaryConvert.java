@@ -24,13 +24,13 @@ public class BinaryConvert {
         char[] arrs = {'1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
         String result = "";
         while (number != 0) {
-            int dived = (int) (number / sys);
-            if (dived == 0) {
-                result += '0';
-                break;
-            }
-            result += arrs[dived - 1];
+            int dived = number % sys;
             number = number / sys;
+            if(number == 0){
+                result += '0';
+                continue;
+            }
+            result += arrs[dived -1];
         }
         return result;
     }
