@@ -21,17 +21,17 @@ public class BinaryConvert {
     }
 
     public static String convert(int number, int sys) {
-        char[] arrs = {'1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+        char[] arrs = {'0','1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
         String result = "";
         while (number != 0) {
             int dived = number % sys;
+            result += arrs[dived ];
             number = number / sys;
             if(number == 0){
-                result += '0';
-                continue;
+                break;
             }
-            result += arrs[dived -1];
         }
+        result =  new StringBuilder(result).reverse().toString();
         return result;
     }
 }
