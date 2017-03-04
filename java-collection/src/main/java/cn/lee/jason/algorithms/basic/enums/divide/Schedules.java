@@ -6,7 +6,10 @@ package cn.lee.jason.algorithms.basic.enums.divide;
 public class Schedules {
 
 
-    public void schedule(int day, int team) {
+    pivate int [][] arrs = new int[][];
+    public void schedule(int team) {
+        if(team == 2){
 
+        }
     }
 }
