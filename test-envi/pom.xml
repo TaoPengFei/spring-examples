@@ -7,6 +7,15 @@
     <groupId>cn.lee.jason</groupId>
     <artifactId>test-envi</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>cn.lee.jason</groupId>
+        <artifactId>spring-examples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+
     <properties>
         <spring.version>4.2.8.RELEASE</spring.version>
         <tomcat-jdbc.version>7.0.42</tomcat-jdbc.version>
@@ -58,18 +67,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jdbc</artifactId>
             <version>${tomcat-jdbc.version}</version>
@@ -109,12 +106,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>jul-to-slf4j</artifactId>
             <version>${slf4j.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.bgee.log4jdbc-log4j2</groupId>
-            <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
-            <version>1.15</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
