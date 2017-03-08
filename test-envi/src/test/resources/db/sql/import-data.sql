@@ -1,1 +1,1 @@
-INSERT into sys_user(id,name) VALUE (1111,'张三');
+INSERT INTO sys_user (id, name) VALUES (1111, '张三');
