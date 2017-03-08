@@ -1,0 +1,1 @@
+INSERT into sys_user(id,name) VALUE (1111,'张三');
