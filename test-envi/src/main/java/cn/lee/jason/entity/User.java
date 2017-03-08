@@ -7,7 +7,7 @@ import javax.persistence.*;
  * Created by jason on 17-3-8.
  */
 @Entity
-@Table(name = "sys_user")
+@Table(name = "sys_user",schema = "sys")
 public class User implements Serializable {
 
     private Long id;

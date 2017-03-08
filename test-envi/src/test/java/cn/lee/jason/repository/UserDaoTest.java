@@ -21,12 +21,10 @@ public class UserDaoTest extends AbstractTransactionalJUnit4SpringContextTests {
     private UserDao userDao;
 
     @Test
-    public void testFundAll() {
+    public void testFindAll() {
         List<User> list = (List<User>) userDao.findAll();
         for (User user : list) {
             System.out.println(user.toString());
         }
-
-
     }
 }

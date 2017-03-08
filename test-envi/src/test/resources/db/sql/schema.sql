@@ -1,6 +1,8 @@
-DROP TABLE IF EXISTS sys_user;
+CREATE SCHEMA IF NOT EXISTS sys;
 
-CREATE TABLE sys_user (
+DROP TABLE IF EXISTS sys.sys_user;
+
+CREATE TABLE sys.sys_user (
   id   BIGINT NOT NULL,
   name VARCHAR(255),
   PRIMARY KEY (id)
