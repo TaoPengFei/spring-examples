@@ -19,9 +19,22 @@
     <dependencies>
 
         <dependency>
-            <groupId></groupId>
-            <artifactId>dcm</artifactId>
+            <groupId>org.dcm4che</groupId>
+            <artifactId>dcm4che-image</artifactId>
+            <version>3.3.8</version>
         </dependency>
 
     </dependencies>
+    <repositories>
+        <repository>
+            <id>www.dcm4che.org</id>
+            <name>dcm4che Repository</name>
+            <url>http://www.dcm4che.org/maven2</url>
+        </repository>
+        <repository>
+            <id>jboss</id>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+        </repository>
+
+    </repositories>
 </project>
