@@ -15,16 +15,37 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <properties>
+        <dcm4che.version>3.3.8</dcm4che.version>
+    </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.dcm4che</groupId>
             <artifactId>dcm4che-image</artifactId>
-            <version>3.3.8</version>
+            <version>${dcm4che.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.dcm4che.tool</groupId>
+            <artifactId>dcm4che-tool-dcm2jpg</artifactId>
+            <version>${dcm4che.version}</version>
+        </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.dcm4che.tool</groupId>
+                <artifactId>dcm4che-tool</artifactId>
+                <version>${dcm4che.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
+        </dependencies>
+
+    </dependencyManagement>
     <repositories>
         <repository>
             <id>www.dcm4che.org</id>
@@ -35,6 +56,5 @@
             <id>jboss</id>
             <url>http://repository.jboss.org/nexus/content/groups/public</url>
         </repository>
-
     </repositories>
 </project>
