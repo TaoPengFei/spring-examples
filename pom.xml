@@ -13,6 +13,7 @@
         <module>java-collection</module>
         <module>extract-core</module>
         <module>test-envi</module>
+        <module>java-io</module>
     </modules>
 
     <properties>

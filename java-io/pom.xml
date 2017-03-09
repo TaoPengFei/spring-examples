@@ -16,4 +16,12 @@
     </parent>
 
 
+    <dependencies>
+
+        <dependency>
+            <groupId></groupId>
+            <artifactId>dcm</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>
