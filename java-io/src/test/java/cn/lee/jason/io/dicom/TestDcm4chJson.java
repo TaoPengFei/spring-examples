@@ -19,7 +19,7 @@ public class TestDcm4chJson {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Test
-    public void testImage() {
+    public void testRight() {
         Resource resource = new ClassPathResource("/dicom/rightDicom");
         doConvert(resource);
     }
