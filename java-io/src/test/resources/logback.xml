@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 典型的日志pattern -->
+        <encoder>
+            <pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- project default level -->
+    <logger name="cn.lee.jason" level="INFO"/>
+
+    <!-- root -->
+    <root level="info">
+        <appender-ref ref="console"/>
+        <appender-ref ref="defaultLogFile"/>
+    </root>
+</configuration>
