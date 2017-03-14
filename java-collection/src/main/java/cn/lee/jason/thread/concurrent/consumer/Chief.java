@@ -28,6 +28,7 @@ public class Chief implements Runnable {
                 if (++count == 10) {
                     println(" out of food .closing");
                     restaurant.executorService.shutdownNow();
+                    return;
                 }
                 println(" Order up! ");
                 synchronized (restaurant.wp) {
