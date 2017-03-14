@@ -1,17 +1,10 @@
 package cn.lee.jason.io.utils;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.OutputStream;
-import javax.servlet.http.HttpServletResponse;
-
-import cn.infisa.io.file.upload.FileUpload;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.springframework.util.FileCopyUtils;
+import java.io.File;
 
 public class FileUtils {
 
