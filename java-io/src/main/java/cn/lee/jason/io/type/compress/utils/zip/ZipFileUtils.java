@@ -1,4 +1,4 @@
-package cn.lee.jason.io.type.compress.zip;
+package cn.lee.jason.io.type.compress.utils.zip;
 
 
 import java.io.*;
