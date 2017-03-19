@@ -1,11 +1,11 @@
-package cn.lee.jason.io.compress.zip;
+package cn.lee.jason.io.type.compress.zip;
 
 
 import java.io.*;
 import java.util.Enumeration;
 import java.util.List;
 
-import cn.lee.jason.io.utils.FileUtils;
+import cn.lee.jason.io.common.utils.FileUtils;
 import com.google.common.collect.Lists;
 import org.apache.commons.compress.archivers.zip.Zip64Mode;
 import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
