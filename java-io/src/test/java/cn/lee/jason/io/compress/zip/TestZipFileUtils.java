@@ -2,7 +2,7 @@ package cn.lee.jason.io.compress.zip;
 
 import java.io.IOException;
 
-import cn.lee.jason.io.type.compress.zip.ZipFileUtils;
+import cn.lee.jason.io.type.compress.utils.zip.ZipFileUtils;
 import org.junit.Test;
 
 import org.springframework.core.io.ClassPathResource;
