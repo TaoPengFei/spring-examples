@@ -65,7 +65,20 @@ public class DefaultThreadPool<T extends Runnable> implements ThreadPool<T> {
     }
 
     public void removeWorkers(int num) {
-
+        synchronized (jobs){
+            if(num >= workNum){
+                throw new IllegalArgumentException("Beyond workNum");
+            }
+            int count = 0;
+            while(count < num){
+                Worker worker = workers.get(count);
+                if(workers.remove(worker)){
+                    worker.shutdown();
+                    count++;
+                }
+            }
+            workNum -= num;
+        }
     }
 
     public int getJobSize() {
