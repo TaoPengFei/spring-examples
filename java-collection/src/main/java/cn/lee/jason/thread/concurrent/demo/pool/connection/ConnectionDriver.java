@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.demo.pool;
+package cn.lee.jason.thread.concurrent.demo.pool.connection;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
