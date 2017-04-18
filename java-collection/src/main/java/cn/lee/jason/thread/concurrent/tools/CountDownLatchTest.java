@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.counter;
+package cn.lee.jason.thread.concurrent.tools;
 
 import java.util.concurrent.CountDownLatch;
 
