@@ -10,5 +10,6 @@ public class FloatBitss {
         System.out.println(Integer.toBinaryString(Float.floatToIntBits(f)));
         System.out.println(Integer.toBinaryString(Float.floatToIntBits(f)).length());
         System.out.println(Integer.toBinaryString(Float.floatToRawIntBits(f)));
+        System.out.println(Integer.toBinaryString(Float.floatToRawIntBits(f)).length());
     }
 }
