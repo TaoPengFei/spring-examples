@@ -29,9 +29,5 @@ public class NioInterruption {
         future.cancel(true);
         TimeUnit.SECONDS.sleep(1);
         sc2.close();
-
-
-
-
     }
 }
