@@ -1,6 +1,8 @@
-package cn.lee.jason.thread.concurrent.producer.storage;
+package cn.lee.jason.thread.concurrent.producer.storage.impl;
 
 import java.util.concurrent.LinkedBlockingQueue;
+
+import cn.lee.jason.thread.concurrent.producer.storage.Storage;
 
 /**
  * 仓库类Storage实现缓冲区
@@ -9,7 +11,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  *
  * @author MONKEY.D.MENG 2011-03-15
  */
-public class BlockingStorage implements Storage{
+public class BlockingStorage implements Storage {
     // 仓库最大存储量  
     private final int MAX_SIZE = 100;
 

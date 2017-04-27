@@ -1,6 +1,4 @@
-package cn.lee.jason.thread.concurrent.producer.storage;
-
-import java.util.LinkedList;
+package cn.lee.jason.thread.concurrent.producer.storage.impl;
 
 /**
  * 仓库类Storage实现缓冲区
@@ -9,12 +7,7 @@ import java.util.LinkedList;
  *
  * @author MONKEY.D.MENG 2011-03-15
  */
-public class NotifyStorage implements Storage {
-    // 仓库最大存储量  
-    private final int MAX_SIZE = 100;
-
-    // 仓库存储的载体  
-    private LinkedList<Object> list = new LinkedList<Object>();
+public class NotifyStorage extends AbstractStorage {
 
     // 生产num个产品  
     public void produce(int num) {
@@ -70,16 +63,5 @@ public class NotifyStorage implements Storage {
         }
     }
 
-    // get/set方法  
-    public LinkedList<Object> getList() {
-        return list;
-    }
 
-    public void setList(LinkedList<Object> list) {
-        this.list = list;
-    }
-
-    public int getMAX_SIZE() {
-        return MAX_SIZE;
-    }
 }  

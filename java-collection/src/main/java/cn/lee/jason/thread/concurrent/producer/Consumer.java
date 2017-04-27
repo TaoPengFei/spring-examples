@@ -1,6 +1,7 @@
 package cn.lee.jason.thread.concurrent.producer;
 
-import cn.lee.jason.thread.concurrent.producer.await.Storage;
+
+import cn.lee.jason.thread.concurrent.producer.storage.Storage;
 
 /**
  * 消费者类Consumer继承线程类Thread

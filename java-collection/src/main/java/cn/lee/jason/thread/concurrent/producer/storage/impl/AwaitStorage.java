@@ -1,9 +1,11 @@
-package cn.lee.jason.thread.concurrent.producer.storage;
+package cn.lee.jason.thread.concurrent.producer.storage.impl;
 
 import java.util.LinkedList;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+
+import cn.lee.jason.thread.concurrent.producer.storage.Storage;
 
 /**
  * 仓库类Storage实现缓冲区
@@ -12,7 +14,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  * @author MONKEY.D.MENG 2011-03-15
  */
-public class AwaitStorage implements Storage{
+public class AwaitStorage implements Storage {
 
 
     // 仓库最大存储量
