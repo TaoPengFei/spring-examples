@@ -1,5 +1,8 @@
 package cn.lee.jason.thread.concurrent.producer.storage.impl;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * 仓库类Storage实现缓冲区
  * <p>
@@ -9,8 +12,11 @@ package cn.lee.jason.thread.concurrent.producer.storage.impl;
  */
 public class NotifyStorage extends AbstractStorage {
 
-    // 生产num个产品  
+    private Lock lock = new ReentrantLock();
+
+    // 生产num个产品
     public void produce(int num) {
+        lock.lock();
         // 同步代码段  
         synchronized (list) {
             // 如果仓库剩余容量不足  
@@ -34,6 +40,7 @@ public class NotifyStorage extends AbstractStorage {
 
             list.notifyAll();
         }
+        lock.unlock();
     }
 
     // 消费num个产品  
