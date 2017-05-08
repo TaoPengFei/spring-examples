@@ -1,4 +1,4 @@
-package cn.lee.jason.lang.proxy.dy.jdk.demo1;
+package cn.lee.jason.lang.proxy.dy.demo1.jdk;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

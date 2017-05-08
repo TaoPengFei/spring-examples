@@ -1,4 +1,4 @@
-package cn.lee.jason.lang.proxy.dy.jdk.demo1;
+package cn.lee.jason.lang.proxy.dy.demo1;
 
 /**
  * jdk的动态代理

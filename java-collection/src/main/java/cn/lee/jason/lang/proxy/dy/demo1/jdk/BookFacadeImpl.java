@@ -1,4 +1,6 @@
-package cn.lee.jason.lang.proxy.dy.jdk.demo1;
+package cn.lee.jason.lang.proxy.dy.demo1.jdk;
+
+import cn.lee.jason.lang.proxy.dy.demo1.BookFacade;
 
 /**
  * Created by jason on 17-5-8.
