@@ -7,7 +7,7 @@ import java.lang.reflect.Proxy;
 /**
  * Created by jason on 17-5-8.
  */
-public class BookFacadeProxy implements InvocationHandler {
+public class BookFacadeProxyJdk implements InvocationHandler {
 
     private Object target;
 
