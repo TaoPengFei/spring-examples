@@ -3,6 +3,7 @@ package cn.lee.jason.repository;
 import java.util.List;
 
 import cn.lee.jason.entity.User;
+import org.junit.Assert;
 import org.junit.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,5 +27,6 @@ public class UserDaoTest extends AbstractTransactionalJUnit4SpringContextTests {
         for (User user : list) {
             System.out.println(user.toString());
         }
+        Assert.assertNotNull(list);
     }
 }
