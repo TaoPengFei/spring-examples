@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.lock;
+package cn.lee.jason.thread.runnable.lock;
 
 /**
  * Created by jason on 17-3-8.

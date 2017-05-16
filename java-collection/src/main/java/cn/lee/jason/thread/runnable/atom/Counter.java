@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.atom;
+package cn.lee.jason.thread.runnable.atom;
 
 import java.util.ArrayList;
 import java.util.List;

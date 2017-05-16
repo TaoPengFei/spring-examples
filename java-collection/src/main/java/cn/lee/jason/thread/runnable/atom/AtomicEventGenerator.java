@@ -1,9 +1,9 @@
-package cn.lee.jason.thread.concurrent.atom;
+package cn.lee.jason.thread.runnable.atom;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import cn.lee.jason.thread.concurrent.volatiles.EventChecker;
-import cn.lee.jason.thread.concurrent.volatiles.IntGenerator;
+import cn.lee.jason.thread.runnable.volatiles.EventChecker;
+import cn.lee.jason.thread.runnable.volatiles.IntGenerator;
 
 /**
  * Created by jason on 17-2-24.

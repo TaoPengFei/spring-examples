@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.volatiles;
+package cn.lee.jason.thread.runnable.lock;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 import static cn.lee.jason.util.Utils.println;
 
 /**
- * Created by jason on 17-2-20.
+ * Created by jason on 17/2/22.
  */
 public class EventChecker implements Runnable {
     private IntGenerator generator;
@@ -20,23 +20,23 @@ public class EventChecker implements Runnable {
     public void run() {
         while (!generator.isCancled()) {
             int val = generator.next();
-            if (val % 2 != 0) {
+            if (val % 2 == 0) {
                 println(val + " not even! ");
-                generator.cancel();
+                generator.cancle();
             }
         }
     }
 
-    public static void test(IntGenerator gp, int count) {
-        println(" Press Ctrl+C to exit ");
+    public static void test(IntGenerator generator, int count) {
+        println(" Ctrl +c to exit");
         ExecutorService exec = Executors.newCachedThreadPool();
-        for (int i = 0; i < 10; i++) {
-            exec.execute(new EventChecker(gp, i));
+        for (int i = 0; i < count; i++) {
+            exec.execute(new EventChecker(generator, i));
         }
         exec.shutdown();
     }
 
-    public static void test(IntGenerator gp) {
-        test(gp, 10);
+    public static void test(IntGenerator generator) {
+        test(generator, 10);
     }
 }

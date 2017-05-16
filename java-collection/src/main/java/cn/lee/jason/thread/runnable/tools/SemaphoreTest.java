@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.tools;
+package cn.lee.jason.thread.runnable.tools;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

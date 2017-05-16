@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.volatiles;
+package cn.lee.jason.thread.runnable.volatiles;
 
 /**
  * Created by jason on 17-2-20.
