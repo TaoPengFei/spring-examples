@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.volatiles;
+package cn.lee.jason.thread.runnable.volatiles;
 
 /**
  * 共享资源样例

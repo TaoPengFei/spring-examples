@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.lock;
+package cn.lee.jason.thread.runnable.lock;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;

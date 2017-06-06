@@ -1,4 +1,4 @@
-package cn.lee.jason.thread.concurrent.local;
+package cn.lee.jason.thread.runnable.local;
 
 import static cn.lee.jason.util.Utils.*;
 
